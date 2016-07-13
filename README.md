@@ -54,7 +54,7 @@ START/STOP SERVER WITH THE BASH-SCRIPT IN *MailDistributionCenter*
 
 running_script.sh
 
-## Usage of script:
+## Usage of script
 
 START SERVER
 ./running_script.sh <start> <0|1>
