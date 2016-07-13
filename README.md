@@ -5,7 +5,9 @@ This project is under MIT License. You find it [here] (https://github.com/fabian
 
 ## Description
 This implementation is a GnuPG mailing distributer system written in Python 3.4. It encrypts and signs e-mails with the GnuPG-standard. 
+
 Received e-mails to a distributer address will be re-encrypted by the system for every member on the distributer with the specific public key.
+
 The server was implemented and tested for a Raspberry Pi 2 model B with the OS Raspbian GNU/Linux Version 7 (wheezy). 
 
 There are some e-mail subject commands to trigger the behavoir of a distributer:
@@ -41,20 +43,18 @@ Python 3.4 libraries:
 
 ## Before starting
 Before using the system, you need to create a database with a distributer address and a strong password. After it you need to modify the **.db_conf.cnf** file in *DistributerManagement*.
-Create a directory for the GnuPG-keyrings and configure the paths in **GnuPGManager.py**. The are also some paths you may configure in **DistributerManager.py**, **GnuPGSystemLogger.py**, **.log.conf** and **delegate.php**.
+
+Create a directory for the GnuPG-keyrings and configure the paths in **GnuPGManager.py**. There are also some paths you may configure in **DistributerManager.py**, **GnuPGSystemLogger.py**, **running_script.sh**, **.log.conf** and **delegate.php**.
+
 For the web service you also need to configure the database connection in the **config.php** file in *WebService*. 
 
 ## How to start
-
-*********************************
 
 START/STOP SERVER WITH THE BASH-SCRIPT IN *MailDistributionCenter*
 
 running_script.sh
 
-*********************************
-
-USAGE OF SCRIPT:
+## Usage of script:
 
 START SERVER
 ./running_script.sh <start> <0|1>
@@ -64,5 +64,3 @@ STOP SERVER
 
 0 for start/stop server (which is running) in background
 1 for start server not in background
-
-*********************************
