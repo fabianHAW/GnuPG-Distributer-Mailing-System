@@ -1,0 +1,11 @@
+#log-files
+*.log
+
+#compiled source code
+*.pyc
+
+#unit tests
+/GnuPG-System_Pi-Version/UnitTests
+
+#gnupg keys
+*.asc
