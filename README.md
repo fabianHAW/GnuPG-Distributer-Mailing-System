@@ -13,6 +13,7 @@ There are some e-mail subject commands to trigger the behavoir of a distributer:
 - CHANGEPK - change the public key of an e-mail address which is on the distributer in the e-mail header
 - GETPK - get the public keys of the distributer in the e-mail header
 - DELFROMDIST - delete the e-mail address from the distributer in the e-mail header
+
 This e-mails don't need content (only the one of the four subjects), need to be signed and must not be encrypted. 
 An administrator also can add and delete user to/from a distributer by using the web service interface. 
 
