@@ -1,7 +1,7 @@
 # GnuPG-Distributer-Mailing-System for Raspberry Pi
 
 ## License
-This project is under MIT License. You find it [here] (https://github.com/fabianHAW/GnuPG-System/LICENSE.md).
+This project is under MIT License. You find it [here] (https://github.com/fabianHAW/GnuPG-Distributer-Mailing-System/LICENSE.md).
 
 ## Description
 This implementation is a GnuPG mailing distributer system written in Python 3.4. It encrypts and signs e-mails with the GnuPG-standard. 
