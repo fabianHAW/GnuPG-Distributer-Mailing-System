@@ -115,7 +115,7 @@ def checkMailAddresses(userAddr, distAddr):
     if len(userAddrSplit) == 2 and len(distAddrSplit) == 2:
         userDomainPart = userAddrSplit[1].rsplit('.')
         distDomainPart = distAddrSplit[1].rsplit('.')
-        if len(userDomainPart) == 2 and len(distDomainPart) == 2:
+        if len(userDomainPart) >= 2 and len(distDomainPart) >= 2:
         #The length of the local-part is at least 1.
         #The domain-part needs to have a dot in it. Before and after this dot it needs to have a length of at least 1
             if len(userAddrSplit[0]) > 0 and len(userDomainPart[0]) > 0 and len(userDomainPart[1]) > 0:
