@@ -162,7 +162,9 @@ class GnuPGManager:
             @param distKeyIDSig: Distributer Key-Id to sign the new mail.
         """
         addressMsgDict = {}
-        msg.attach(MIMEText('This message was send from ' + senderAddr))
+        if subject != '':
+            msg.attach(MIMEText('This message was send from ' + senderAddr))
+            
         signature = self.gpg.sign(msg.as_string().replace('\n', '\r\n'), default_key=distKeyIDSig, detach=True, clearsign=False)
         msgSigMIME = _util.generateMIMEMsg('signed', msg, signature, None, None, None)
         for item in addrFingerprintKeyInf.items():
